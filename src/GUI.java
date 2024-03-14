@@ -15,6 +15,12 @@ public class GUI {
         Container container = frame.getContentPane();
         container.setLayout(new BorderLayout());
 
+        //--------Panel de los botones de los juegos del hambre--------
+        JPanel northPanel = new JPanel();
+        northPanel.add(new JCheckBox("Katniss"));
+        northPanel.add(new JCheckBox("Peeta"));
+        container.add(northPanel, BorderLayout.NORTH);
+
 
 
 
