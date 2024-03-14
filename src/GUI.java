@@ -88,7 +88,13 @@ public class GUI {
 
          */
 
-
+        //--------Panel de los botones de abajo--------
+        JPanel southPanel = new JPanel();
+        southPanel.setLayout(new BoxLayout(southPanel, BoxLayout.X_AXIS));
+        southPanel.add(new JButton("But 1"));
+        southPanel.add(new JButton("But 2"));
+        southPanel.setPreferredSize(new Dimension(0,50));
+        container.add(southPanel, BorderLayout.SOUTH);
 
         //Tamaño, titulo centrado y visible
         //frame.setSize(800, 400);
