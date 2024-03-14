@@ -21,6 +21,16 @@ public class GUI {
         northPanel.add(new JCheckBox("Peeta"));
         container.add(northPanel, BorderLayout.NORTH);
 
+        //--------Panel de la imagen--------
+        JPanel centerPanel = new JPanel(new GridLayout(2, 2));
+        ImageIcon icon = new ImageIcon("img/flores.jpg");
+
+        //4 imagenes
+        for (int i = 0; i < 4; i++) {
+            centerPanel.add(new JLabel(icon));
+        }
+        container.add(centerPanel, BorderLayout.CENTER);
+
 
 
 
